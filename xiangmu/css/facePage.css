@@ -1,0 +1,91 @@
+.facePage {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/facePage_bg.png');
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.facePage1 {
+    width: 92.5%;
+    position: absolute;
+    left: 3.9%;
+    /*top: 6.5%;*/
+    top: 0%;
+    animation: facePage1 0.5s 0s linear forwards;
+    opacity: 0;
+}
+@-webkit-keyframes facePage1 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+}
+.facePage2 {
+    width: 60.9%;
+    position: absolute;
+    left: 19.7%;
+    top: 18.8%;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    animation: facePage2 0.5s 0.5s linear forwards;
+    opacity: 0;
+}
+@-webkit-keyframes facePage2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(2) rotateZ(180deg);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.25) rotateZ(360deg);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0px) scale(1) rotateZ(360deg);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0px) scale(1.2) rotateZ(360deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1) rotateZ(360deg);
+    }
+}
+.facePage3 {
+    width: 63.3%;
+    position: absolute;
+    left: 18.4%;
+    top: 44.8%;
+    animation: facePage3 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@-webkit-keyframes facePage3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.facePage4 {
+    width: 50.5%;
+    position: absolute;
+    left: 25%;
+    top: 77%;
+    animation: facePage4 0.2s 2s linear forwards;
+    opacity: 0;
+}
+@-webkit-keyframes facePage4 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

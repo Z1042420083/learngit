@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- 适应手机 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>滴滴</title>
+
+        <!-- 引入css -->
+        <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/loading.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/facePage.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/carpool.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/popup.css" media="screen" title="no title" charset="utf-8">
+
+        <!-- 引入js -->
+        <script src="libs/jquery-2.1.3.min.js" charset="utf-8"></script>
+        <script src="js/style.js" charset="utf-8"></script>
+
+        <!-- 手机适配大小 -->
+        <script type="text/javascript">
+        (function (doc, win) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            window.clientWidth = docEl.clientWidth;
+            if (!window.clientWidth) return;
+            docEl.style.fontSize = 20 * (window.clientWidth / 640) + 'px';
+            window.base = 20 * (window.clientWidth / 640);
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+        </script>
+
+    </head>
+    <body>
+        <!-- http://static.udache.com/gulfstream/webapp/modules/img-reading/index.html -->
+        <div class="container">
+
+            <!-- 加载页 -->
+            <div class="loadingPage page" hidden>
+                <img class="loading_car" src="img/loading_car.png" alt="" />
+            </div>
+
+            <!-- 开始页 -->
+            <div class="facePage page" hidden>
+                <img src="img/facePage_1.png" alt="" class="facePage1">
+                <img src="img/facePage_2.png" alt="" class="facePage2">
+                <img src="img/facePage_3.png" alt="" class="facePage3">
+                <img src="img/facePage_4.png" alt="" class="facePage4">
+            </div>
+
+            <!-- 游戏页 -->
+            <div class="carpool page">
+                <figure>
+                    <img class="picture" src="img/carpoolPage_matter_1.png" alt="" />
+                </figure>
+                <div class="tenges">
+                    <ul class="clear">
+
+                    </ul>
+                </div>
+                <ol class="txt">
+                    <li><img src="img/carpool_text_1_1.png" alt="" /></li>
+                    <li><img src="img/carpool_text_1_2.png" alt="" /></li>
+                    <li><img src="img/carpool_text_1_3.png" alt="" /></li>
+                    <li><img src="img/carpool_text_1_4.png" alt="" /></li>
+                    <li><img src="img/carpool_text_1_5.png" alt="" /></li>
+                    <li><img src="img/carpool_text_1_6.png" alt="" /></li>
+                    <li><img src="img/carpool_text_1_7.png" alt="" /></li>
+                    <li><img src="img/carpool_text_1_8.png" alt="" /></li>
+                </ol>
+            </div>
+<!-- carpool_text_3_1
+carpool_answer_2_1
+carpoolPage_matter_1
+carpoolPage_error_1
+true_1 -->
+            <!-- 弹框页 -->
+            <div class="popup" hidden>
+
+            </div>
+        </div>
+    </body>
+</html>

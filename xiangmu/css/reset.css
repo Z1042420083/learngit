@@ -1,0 +1,56 @@
+/*清除外边距*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, figure, /*结构元素*/
+dl, dt, dd, ul, ol, li, /*列表元素*/
+fieldset, lengend, button, input, textarea, /*表单元素*/
+th, td, /*表格元素*/
+pre /*文本格式元素*/ {
+    margin: 0;
+}
+
+/*清除内边距*/
+ul, ol, li, menu, input {
+    padding: 0;
+}
+
+/*清除边框*/
+img {
+    border: 0;
+    display: block;
+}
+
+/*清除h标签的样式*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+/*清除了样式*/
+ul, ol {
+    list-style: none;
+}
+/* 将斜体扶正 */
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+/*清下划线*/
+a {
+    text-decoration: none;
+}
+
+/*清浮动*/
+.clear-hide {
+overflow: hidden;
+}
+.clear_both {
+    clear: both;
+}
+
+/*清浮动*/
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
